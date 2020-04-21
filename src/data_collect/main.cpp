@@ -115,15 +115,13 @@ void record(void) {
 
    acc16 = (res[4] << 6) | (res[5] >> 2);
 
-   if (acc16 > UINT14_MAX/2)
+  if (acc16 > UINT14_MAX/2)
 
      acc16 -= UINT14_MAX;
 
    z = ((float)acc16) / 4096.0f;
 
-   printf("%f, %f, %f\n", x * 1000.0, y * 1000.0, z
-
-* 1000.0);
+   printf("%f, %f, %f\n", x * 1000.0, y * 1000.0, z * 1000.0);
 
 }
 
@@ -163,7 +161,7 @@ void initFXOS8700Q(void) {
 
   data[0] = FXOS8700Q_CTRL_REG1;
 
- FXOS8700CQ_writeRegs(data, 2);
+  FXOS8700CQ_writeRegs(data, 2);
 
 }
 
