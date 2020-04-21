@@ -18,7 +18,7 @@ struct Config {
 
   // The number of expected consecutive inferences for each gesture type.
 
-  const int consecutiveInferenceThresholds[label_num] = {20, 10, 5};
+  const int consecutiveInferenceThresholds[label_num] = {20, 10, 10};
 
 
   const char* output_message[label_num] = {
@@ -39,8 +39,16 @@ struct Config {
         "   *             \n\r"
         "  *              \n\r"
         " * * * * * * * * \n\r",
-        "LINE:\n\r"
-        " ****************\n\r"};
+        "N:\n\r"
+        " **       *      \n\r"
+        " * *      *      \n\r"
+        " *  *     *      \n\r"
+        " *   *    *      \n\r"
+        " *    *   *      \n\r"
+        " *     *  *      \n\r"
+        " *      * *      \n\r"
+        " *       **      \n\r"
+        };
 };
 
 
